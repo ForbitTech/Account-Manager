@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="fab_menu">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentEnd">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="menu_fab_size">normal</item>
+        <item name="menu_showShadow">true</item>
+        <item name="menu_shadowColor">#66000000</item>
+        <item name="menu_shadowRadius">4dp</item>
+        <item name="menu_shadowXOffset">2dp</item>
+        <item name="menu_shadowYOffset">2dp</item>
+        <item name="menu_colorNormal">@color/black</item>
+        <item name="menu_colorPressed">@color/yallow</item>
+        <item name="menu_colorRipple">@color/yallow</item>
+        <item name="menu_animationDelayPerItem">50</item>
+        <item name="menu_icon">@drawable/fab_add</item>
+        <item name="menu_buttonSpacing">0dp</item>
+        <item name="menu_labels_margin">0dp</item>
+        <item name="menu_labels_showAnimation">@anim/fab_slide_in_from_right</item>
+        <item name="menu_labels_hideAnimation">@anim/fab_slide_out_to_right</item>
+        <item name="menu_labels_paddingTop">4dp</item>
+        <item name="menu_labels_paddingRight">8dp</item>
+        <item name="menu_labels_paddingBottom">4dp</item>
+        <item name="menu_labels_paddingLeft">8dp</item>
+        <item name="menu_backgroundColor">@android:color/transparent</item>
+        <item name="menu_fab_hide_animation">@anim/hide_to_bottom</item>
+        <item name="menu_fab_show_animation">@anim/show_from_bottom</item>
+        <item name="menu_labels_colorNormal">#333333</item>
+        <item name="menu_labels_colorPressed">#444444</item>
+        <item name="menu_labels_colorRipple">#66FFFFFF</item>
+        <item name="menu_labels_cornerRadius">3dp</item>
+        <item name="menu_labels_ellipsize">none</item>
+        <item name="menu_labels_maxLines">1</item>
+        <item name="menu_labels_padding">8dp</item>
+        <item name="menu_labels_position">left</item>
+        <item name="menu_labels_showShadow">true</item>
+        <item name="menu_labels_singleLine">false</item>
+        <item name="menu_labels_textColor">#FFFFFF</item>
+        <item name="menu_labels_textSize">14sp</item>
+        <item name="menu_openDirection">up</item>
+    </style>
+
+    <style name="tab_layout_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="tabGravity">center</item>
+        <item name="tabMode">scrollable</item>
+        <item name="tabTextColor">@color/black</item>
+        <item name="tabIndicatorColor">@color/black</item>
+    </style>
+
+    <style name="fab_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fab_size">mini</item>
+        <item name="fab_colorRipple">@color/yallow</item>
+        <item name="fab_colorPressed">@color/yallow</item>
+        <item name="fab_colorNormal">@color/black</item>
+    </style>
+
+</resources>

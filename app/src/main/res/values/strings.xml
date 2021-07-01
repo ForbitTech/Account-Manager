@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Account Manager</string>
+    <string name="please_login_with_your_email_amp_password"><u>Please Login with your Email &amp; Password</u></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="businesslist">Business List</string>
+</resources>

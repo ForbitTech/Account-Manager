@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "195125924497",
+    "project_id": "account-manager-9530c",
+    "storage_bucket": "account-manager-9530c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:195125924497:android:cb511d8546c60e26b7a530",
+        "android_client_info": {
+          "package_name": "com.forbitbd.accountmanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "195125924497-3nn6ji47v6ehl18obe9vhl50f79qg65k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.forbitbd.accountmanager",
+            "certificate_hash": "99ee33599a7037f162285b8a059a119afb2f6716"
+          }
+        },
+        {
+          "client_id": "195125924497-edb7di8hanf0rmok7rg6o3ncvl82srk5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmAAWghKkCp_865W3HnmRgObV8gUEGvXo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "195125924497-edb7di8hanf0rmok7rg6o3ncvl82srk5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
