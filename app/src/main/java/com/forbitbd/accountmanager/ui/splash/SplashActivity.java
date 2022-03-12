@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.os.Handler;
 
 import com.forbitbd.accountmanager.R;
-import com.forbitbd.accountmanager.ui.dashboard.DashboardActivity;
 import com.forbitbd.accountmanager.ui.login.LoginActivity;
 import com.forbitbd.accountmanager.ui.main.MainActivity;
 
@@ -21,6 +20,8 @@ public class SplashActivity extends AppCompatActivity implements SplashContract.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+//        requestWindowFeature(Window.FEATURE_NO_TITLE);
+//        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_splash);
         mPresenter = new SplashPresenter(this);
     }

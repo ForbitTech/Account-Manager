@@ -4,6 +4,9 @@ import android.util.Log;
 
 import androidx.annotation.NonNull;
 
+import com.forbitbd.accountmanager.api.ApiClient;
+import com.forbitbd.androidutils.api.ServiceGenerator;
+import com.forbitbd.androidutils.models.User;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInResult;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -14,6 +17,10 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class LoginPresenter implements LoginContract.Presenter{
 
@@ -35,6 +42,16 @@ public class LoginPresenter implements LoginContract.Presenter{
         }
     }
 
+    @Override
+    public void loadFinalLayout() {
+        mView.loadFinalLayout();
+    }
+
+    @Override
+    public void initView() {
+        mView.initView();
+    }
+
     private void firebaseAuthWithGoogle(GoogleSignInAccount account) {
         AuthCredential credential = GoogleAuthProvider.getCredential(account.getIdToken(), null);
         FirebaseAuth.getInstance().signInWithCredential(credential).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -44,7 +61,9 @@ public class LoginPresenter implements LoginContract.Presenter{
 
                     final FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                     if (user != null) {
-                        mView.startMainActivity();
+                        if(user!=null){
+                            registerToDatabase(user);
+                        }
                     }
                 }
             }
@@ -54,5 +73,49 @@ public class LoginPresenter implements LoginContract.Presenter{
 
             }
         });
+    }
+
+    private void registerToDatabase(FirebaseUser user){
+        User usr = new User();
+
+        if(user.getEmail()!=null){
+            usr.setEmail(user.getEmail());
+        }
+
+        if(user.getDisplayName()!=null){
+            usr.setName(user.getDisplayName());
+        }
+
+        if(user.getPhoneNumber()!=null){
+            usr.setContact(user.getPhoneNumber());
+        }
+
+        if(user.getPhotoUrl()!=null){
+            usr.setImage(user.getPhotoUrl().toString());
+        }
+
+        ApiClient apiClient = ServiceGenerator.createService(ApiClient.class);
+
+        Call<User> call = apiClient.register(usr);
+
+        call.enqueue(new Callback<User>() {
+            @Override
+            public void onResponse(Call<User> call, Response<User> response) {
+                if(response.code()==201){
+                    mView.startMainActivity();
+                }
+            }
+
+            @Override
+            public void onFailure(Call<User> call, Throwable t) {
+
+            }
+        });
+
+
+//        Log.d("UUUUU",user.getDisplayName());
+//        Log.d("UUUUU",user.getPhoneNumber()+"");
+//        Log.d("UUUUU",user.getEmail()+"");
+//        Log.d("UUUUU",user.getMetadata().toString()+"");
     }
 }

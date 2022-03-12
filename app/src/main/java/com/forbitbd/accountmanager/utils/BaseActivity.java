@@ -18,18 +18,19 @@ import com.google.firebase.auth.FirebaseAuth;
 public abstract class BaseActivity extends AppCompatActivity {
 
     private Toolbar toolbar;
-    private GoogleSignInClient client;
+    private GoogleSignInClient mGoogleSignInClient;
     private FirebaseAuth mAuth;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+// Configure Google Sign In
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(getString(R.string.default_web_client_id))
                 .requestEmail()
                 .build();
-        client = GoogleSignIn.getClient(this, gso);
+
+        mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
         mAuth = FirebaseAuth.getInstance();
     }
 
@@ -40,7 +41,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     }
 
     public GoogleSignInClient getGoogleApiClient() {
-        return client;
+        return mGoogleSignInClient;
     }
 
     public FirebaseAuth getAuth(){
@@ -48,7 +49,10 @@ public abstract class BaseActivity extends AppCompatActivity {
     }
 
     public void signOut(){
-        client.signOut();
+        if(mGoogleSignInClient!=null){
+            mGoogleSignInClient.signOut();
+        }
+
         mAuth.signOut();
     }
 

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp"
+    android:animateLayoutChanges="true"
+    android:layout_marginBottom="5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/l"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@color/colorAccent"
+            app:srcCompat="@drawable/chart"
+            android:padding="8dp"/>
+
+        <TextView
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="@dimen/medium_padding"
+            app:layout_constraintEnd_toStartOf="@+id/view"
+            app:layout_constraintStart_toEndOf="@+id/l"
+            android:id="@+id/tv_business_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="Mayer Dowa General Store"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            app:layout_constraintTop_toBottomOf="@+id/tv_business_name"
+            app:layout_constraintStart_toStartOf="@+id/tv_business_name"
+            app:layout_constraintEnd_toEndOf="@+id/tv_business_name"
+            android:id="@+id/tv_business_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Shah Ali Bagh, Mirpur-1"/>
+
+        <ImageView
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintTop_toTopOf="@+id/l"
+            app:layout_constraintBottom_toBottomOf="@+id/l"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="@dimen/medium_padding"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:id="@+id/delete"
+            android:src="@drawable/delete"
+            android:background="?attr/selectableItemBackground"
+            android:layout_marginEnd="@dimen/medium_padding" />
+
+        <ImageView
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintTop_toTopOf="@+id/l"
+            app:layout_constraintBottom_toBottomOf="@+id/l"
+            app:layout_constraintEnd_toStartOf="@+id/delete"
+            android:padding="@dimen/medium_padding"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:id="@+id/view"
+            android:src="@drawable/eye"
+            android:background="?attr/selectableItemBackground"
+            android:layout_marginEnd="@dimen/medium_padding" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</com.google.android.material.card.MaterialCardView>

@@ -8,20 +8,20 @@
         android:title="Home" />
 
     <item
-        android:id="@+id/acdetails"
-        android:title="Account Details" />
+        android:id="@+id/profile"
+        android:title="Profile" />
 
     <item
-        android:id="@+id/buysell"
-        android:title="Buy-Sell" />
+        android:id="@+id/shared_business"
+        android:title="Shared Business" />
 
     <item
-        android:id="@+id/costs"
-        android:title="Costs" />
+        android:id="@+id/demo_business"
+        android:title="Demo Business" />
 
     <item
-        android:id="@+id/cash"
-        android:title="Cash Account" />
+        android:id="@+id/contact"
+        android:title="Contact" />
 
     <item
         android:id="@+id/due"

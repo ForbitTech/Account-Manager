@@ -1,41 +1,95 @@
 {
   "project_info": {
-    "project_number": "195125924497",
-    "project_id": "account-manager-9530c",
-    "storage_bucket": "account-manager-9530c.appspot.com"
+    "project_number": "136336671541",
+    "firebase_url": "https://conman-82b27.firebaseio.com",
+    "project_id": "conman-82b27",
+    "storage_bucket": "conman-82b27.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:195125924497:android:cb511d8546c60e26b7a530",
+        "mobilesdk_app_id": "1:136336671541:android:2f1ec669fd74423058c27c",
         "android_client_info": {
           "package_name": "com.forbitbd.accountmanager"
         }
       },
       "oauth_client": [
         {
-          "client_id": "195125924497-3nn6ji47v6ehl18obe9vhl50f79qg65k.apps.googleusercontent.com",
+          "client_id": "136336671541-mu1bb1fuo188ibqi6012ginrao81i275.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.forbitbd.accountmanager",
-            "certificate_hash": "99ee33599a7037f162285b8a059a119afb2f6716"
+            "certificate_hash": "8af17e120cd5820195c207659d6ccb07b2685f67"
           }
         },
         {
-          "client_id": "195125924497-edb7di8hanf0rmok7rg6o3ncvl82srk5.apps.googleusercontent.com",
+          "client_id": "136336671541-lvkpjtteqlnsp7lkgai340hs69i3664l.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAmAAWghKkCp_865W3HnmRgObV8gUEGvXo"
+          "current_key": "AIzaSyA0DBwe6OFIUowFT6yknLgSIUh721LVwLI"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "195125924497-edb7di8hanf0rmok7rg6o3ncvl82srk5.apps.googleusercontent.com",
+              "client_id": "136336671541-lvkpjtteqlnsp7lkgai340hs69i3664l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:136336671541:android:85be70935b58557558c27c",
+        "android_client_info": {
+          "package_name": "com.forbitbd.constructionmanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "136336671541-atettb486ldbtugi2cttb9rc01qi9i78.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.forbitbd.constructionmanager",
+            "certificate_hash": "8af17e120cd5820195c207659d6ccb07b2685f67"
+          }
+        },
+        {
+          "client_id": "136336671541-iivbpjmsba1aetj850f55iq8ahc7e2j0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.forbitbd.constructionmanager",
+            "certificate_hash": "1d2004a713f260c3c53763cb4bd911257ea38a53"
+          }
+        },
+        {
+          "client_id": "136336671541-j385ofkf9fu7fs9gqtj2kkou5rjmlc29.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.forbitbd.constructionmanager",
+            "certificate_hash": "2ecfb76a3a51494d864ddd46aa014220388df730"
+          }
+        },
+        {
+          "client_id": "136336671541-lvkpjtteqlnsp7lkgai340hs69i3664l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0DBwe6OFIUowFT6yknLgSIUh721LVwLI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "136336671541-lvkpjtteqlnsp7lkgai340hs69i3664l.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

@@ -1,9 +1,45 @@
 <resources>
     <string name="app_name">Account Manager</string>
-    <string name="please_login_with_your_email_amp_password"><u>Please Login with your Email &amp; Password</u></string>
+    <string name="please_login_with_your_email_amp_password">Please Login with your Email &amp; Password</string>
+
+    <!--    Original-->
+        <string name="banner_ad_unit">ca-app-pub-5474497946967422/3125709569</string>
+        <string name="interstitial_ad_unit">ca-app-pub-5474497946967422/7151943856</string>
+
+
+    <!--    Test-->
+
+    <string name="app_id_n">ca-app-pub-5474497946967422~4608513322</string>
+<!--    <string name="banner_ad_unit">ca-app-pub-3940256099942544/6300978111</string>-->
+<!--    <string name="interstitial_ad_unit">ca-app-pub-3940256099942544/1033173712</string>-->
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
     <string name="businesslist">Business List</string>
+    <string name="logo">logo</string>
+    <string name="social_media_login">Social Media Login</string>
+    <string name="google_button">google_button</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="signup">signup</string>
+    <string name="login">login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="create_business">Create Business</string>
+    <string name="create_new_business">Create New Business</string>
+    <string name="enter_your_business_info">Fill up your business Information</string>
+    <string name="business_name">Business Name</string>
+    <string name="business_desc">Business Description</string>
+    <string name="business_location">Business Address</string>
+
+    <string name="project_list">Your Projects</string>
+    <string name="update_project">Update Project</string>
+    <string name="share_project_to">Share Project To..</string>
+    <string name="read">Read</string>
+    <string name="write">Write</string>
+    <string name="share">Share</string>
+    <string name="photo">photo</string>
+    <string name="organization_name">Organization Name</string>
+    <string name="shared_projects">Shared Projects</string>
 </resources>

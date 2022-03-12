@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android"
+    android:transitionOrdering="together">
+
+    <changeBounds
+        android:interpolator="@android:interpolator/accelerate_decelerate"
+        android:duration="500">
+        <targets>
+            <target android:targetId="@+id/logo"/>
+            <target android:targetId="@+id/loginCard"/>
+        </targets>
+    </changeBounds>
+
+    <fade android:interpolator="@android:interpolator/accelerate_decelerate"
+        android:duration="500"
+        android:fadingMode="fade_in_out">
+        <targets>
+            <target android:targetId="@+id/logo"/>
+            <target android:targetId="@+id/loginCard"/>
+        </targets>
+    </fade>
+
+    <changeBounds  android:interpolator="@android:interpolator/bounce"
+        android:startDelay="500"
+        android:duration="500">
+
+        <targets>
+            <target android:targetId="@+id/google"/>
+            <target android:targetId="@+id/signup"/>
+        </targets>
+
+    </changeBounds>
+
+    <changeBounds  android:interpolator="@android:interpolator/bounce"
+        android:fadingMode="fade_in_out"
+        android:startDelay="500"
+        android:duration="500">
+
+        <targets>
+            <target android:targetId="@+id/dont_have_account"/>
+            <target android:targetId="@+id/social_media_login"/>
+        </targets>
+
+    </changeBounds>
+
+</transitionSet>

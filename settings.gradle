@@ -1,2 +1,3 @@
+include ':financeL'
 rootProject.name = "Account Manager"
 include ':app'
